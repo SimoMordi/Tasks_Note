@@ -60,6 +60,9 @@ addListBtn.addEventListener('click', () => {
                 alert('Please enter a card description.');
             }
         });
+
+        
+
         newList.appendChild(addCardBtn);
         
         cards.insertBefore(newList, cards.lastChild);
