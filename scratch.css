@@ -1,0 +1,57 @@
+body{
+    margin: 39px;
+    background: gainsboro;
+}
+#App-container * {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1 {
+    color: red
+}
+#App-container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 1fr;
+    grid-template-rows: 50px 100px 150px 100px 3fr 1fr;
+}
+
+
+
+.todo-title {
+    background-color: #ffd700; /* Gold */
+}
+
+
+
+.todo-form {
+    background-color: #e0e0e0; /* Light gray */
+}
+
+.random-num {
+    background-color: #b0c4de; /* Light steel blue */
+    grid-column: span 3;
+}
+
+.todo-container {
+    background-color: antiquewhite; /* White */
+    grid-row: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+
+}
+.single-todo p{
+    margin: 0px 20px;
+}
+
+.close {
+    cursor: pointer;
+    background-color: #87ceeb;
+    border-radius: 30px;
+    padding: 8px
+}
+
+
