@@ -23,26 +23,33 @@
             </div>
         </div>
         <div class="category">
-            <label for="Priority">Select Priority</label>
-            <select id="Priority" name="priority">
-                <option value="Requires Urgent Attention">Requires Urgent Attention</option>
-                <option value="Requires Intermediate Action">Requires Intermediate Action</option>
-                <option value="To-Dos later">To-Dos later</option>
-                
-                
-            </select>
+            <div id="Priority1">
+                <label for="Priority">Select Priority</label>
+                <select id="Priority" name="priority">
+                    <option value="Requires Urgent Attention">Requires Urgent Attention</option>
+                    <option value="Requires Intermediate Action">Requires Intermediate Action</option>
+                    <option value="To-Dos later">To-Dos later</option>
+                </select>
+            </div>
             
             
-            
-            <label for="type">Type of Notes</label>
-            <select id="TypeOfNotes" name="type">
-                <option value="Meetings & Presentations">Meetings & Presentations</option>
-                <option value="With Due dates">With Due dates</option>
-                <option value="Projects">Projects</option>
-            </select>
+            <div id="type">
+                <label for="type">Type of Notes</label>
+                <select id="TypeOfNotes" name="type">
+                    <optgroup label="Meeting Types">
+                        <option value="Meetings & Presentations">Meetings</option>
+                        <option value="Meetings & Presentations">Presentations</option>
+                    </optgroup>
+                    <optgroup label="Task Types">
+                        <option value="With Due dates">With Due dates</option>
+                        <option value="Projects">Projects</option>
+                    </optgroup>
+                </select>
+            </div>
         </div>
         
         <div class="cards">
+            
             <!-- Card creation section -->
             <div class="list-creator">
                 <input type="text" id="listTitle" placeholder=" Add another list...">
